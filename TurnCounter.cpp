@@ -11,8 +11,6 @@ bool segmentflag= false;
 
 //ターンカウンター制作　一回の起動で終了させないためにwhile文で捕まえ、キーボード操作があればターン数を加算
 //意図的な無限ループを使用
-//イフ文がずっと処理されてるのを直したい　201510124
-//naotta
 
 int main()
 {
@@ -22,7 +20,7 @@ int main()
 	cout << "自分のターンに加算してください" << endl;
 	cout << turn<< "ターン目です！" << endl;
 	
-	//継続条件はFalseのときループ
+	//継続条件はFalseのとき
 	while (infinit==false)
 	{
 		if (_kbhit() && _getch() == 27)infinit=true; //ASCIIコード　ESCに対応　ループの終了
